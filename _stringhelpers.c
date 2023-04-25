@@ -45,3 +45,20 @@ int chck_space(char *str)
 	}
 	return (0);
 }
+
+/**
+ * is_path - check if a string is path
+ * @str: string to check
+ * Return: 1 if is a path | 0 if it's not
+ */
+int is_path(char *str)
+{
+	while (*str != '\0')
+	{
+		if (*str == '/')
+			return (1);
+
+		str++;
+	}
+	return (0);
+}
